@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pushpesh Kumar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <!-- <li><a href="#skills">Skills</a></li> -->
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#get-in-touch">Get In Touch</a></li>
+        </ul>
+        <button
+          id="darkModeToggle"
+          aria-label="Toggle Dark Mode"
+          class="dark-mode-toggle"
+        >
+          <svg
+            id="darkIcon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="moon-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"
+            />
+          </svg>
+          <svg
+            id="lightIcon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            stroke="none"
+            class="sun-icon"
+            style="display: none"
+          >
+            <circle cx="12" cy="12" r="5" />
+            <g stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </g>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <h1>Hi, I'm <span class="highlight">Pushpesh Kumar</span></h1>
+      <h2>
+        <span id="typed-text"></span>
+        <span class="cursor">|</span>
+      </h2>
+      <p>
+        Pushpesh Kumar is a B.Tech. IT student at the University of Calcutta
+        (2026) and a competitive programmer with 1400+ solved DSA problems
+        across platforms.Pushpesh secured Rank 466 in CodeFest’25 among 45,000+
+        participants and a Top 5 finish in CodeFest at the University of
+        Calcutta, and has also participated in ICPC Prelims and AlgoUtsav.
+      </p>
+      <div class="hero-buttons">
+        <a
+          href="https://drive.google.com/file/d/1KPuw-qqheb0qziy6VOzswhQJtJpQ69Zb/view?usp=drive_link"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn secondary-btn"
+          >Download Resume</a
+        >
+      </div>
+      <div class="social-icons">
+        <a
+          href="https://github.com/pushpeshkr451"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.754-1.333-1.754-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.236 1.84 1.236 1.07 1.835 2.807 1.305 3.492.997.108-.775.418-1.305.76-1.605-2.665-.3-5.466-1.335-5.466-5.93 0-1.31.47-2.38 1.236-3.22-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 0 1 3-.405c1.02.005 2.045.138 3 .405 2.29-1.552 3.296-1.23 3.296-1.23.655 1.653.243 2.873.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.625-5.48 5.92.43.37.823 1.1.823 2.22 0 1.606-.015 2.896-.015 3.286 0 .32.216.694.825.576C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/pushpeshkr451/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.1c.7-1.3 2.4-2.7 4.9-2.7 5.2 0 6.2 3.4 6.2 7.8V24h-5v-7.5c0-1.8 0-4.1-2.5-4.1-2.5 0-2.9 2-2.9 4v7.6h-5V8z"
+            />
+          </svg>
+        </a>
+        <a href="mailto:pushpeshkr451@gmail.com" aria-label="Email">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+            />
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+          Pushpesh Kumar is a B.Tech. IT student at the University of Calcutta
+          (2026) and a competitive programmer with 1400+ solved DSA problems
+          across platforms. He achieved a LeetCode contest rating of 1883 (Top
+          1k in Weekly Contest 435), Codeforces Pupil rank, and maintained a
+          310+ day solving streak. Pushpesh secured Rank 466 in CodeFest’25
+          among 45,000+ participants and a Top 5 finish in CodeFest at the
+          University of Calcutta, and has also participated in ICPC Prelims and
+          AlgoUtsav.
+        </p>
+      </section>
+
+      <section id="education" class="section">
+        <h2>Education</h2>
+        <div class="timeline">
+          <div class="container left">
+            <div class="content">
+              <span class="tag">University</span>
+              <h3>University of Calcutta</h3>
+              <p>B.Tech. in Information Technology</p>
+              <p>NOV 2022 – July 2026</p>
+              <p>◦ CGPA: 8.1/10.0</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <span class="tag">Higher Secondary Education</span>
+              <h3>S.A.M Secondary School</h3>
+              <p>July 2019 – April 2021</p>
+              <p>◦ Academic Marks: 83%</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <span class="tag">Secondary Education</span>
+              <h3>S.A.M Secondary School</h3>
+              <p>June 2018 – April 2019</p>
+              <p>◦ Academic Marks: 93.6%</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section"></section>
+
+      <section id="experience" class="section">
+        <h2>Experience & Certifications</h2>
+        <div class="timeline">
+          <div class="container left">
+            <div class="content">
+              <span class="tag">Competition</span>
+              <h3>Participated in the ICPC PRELIMS</h3>
+              <p>Participated in the ICPC PRELIMS 2024.</p>
+              <span class="date">2024</span>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <span class="tag">CodeFest’25</span>
+              <h3>Rank 466 in CodeFest’25 prelims</h3>
+              <p>
+                Achieved Rank 466 in the CodeFest’25 prelims, conducted by IICPC
+                among 45000+ participants.
+              </p>
+              <span class="date">2025</span>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <span class="tag">CodeFest</span>
+              <h3>Top 5 position in Codefest</h3>
+              <p>
+                Secured a Top 5 position in Codefest, a competitive programming
+                contest organized by the University of Calcutta.
+              </p>
+              <span class="date">2025</span>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <span class="tag">AlgoUtsav25</span>
+              <h3>Participant</h3>
+              <p>
+                Participated in the AlgoUtsav25, a competitive programming
+                contest organized by the NIT Rourkela.
+              </p>
+              <span class="date">2025</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card university-payment-system">
+            <div class="project-header">
+              <span class="project-category">University Payment System</span>
+            </div>
+            <h3>University Payment System</h3>
+            <p>
+              ◦ A prototype for streamlining student fee payments with secure
+              authentication, a student dashboard, and an admin panel. Built
+              with HTML, CSS, JavaScript, Node.js, and MongoDB.
+            </p>
+          </div>
+          <div class="project-card uber-clone-2">
+            <div class="project-header">
+              <span class="project-category">Uber Clone</span>
+            </div>
+            <h3>Uber Clone</h3>
+            <p>
+              ◦ Built a fully functional Uber Clone using the MERN stack
+              (MongoDB, Express, React, Node.js), incorporating real-time ride
+              booking, user authentication, interactive maps with route
+              optimization, backend API integration, and a responsive user
+              interface for a seamless experience.
+            </p>
+          </div>
+          <div class="project-card employee-management-system-2">
+            <div class="project-header">
+              <span class="project-category">Employee Management System</span>
+            </div>
+            <h3>Employee Management System</h3>
+            <p>
+              ◦ Developed an Employee Management System using the MERN stack
+              (MongoDB, Express, React, Node.js), fea- turing employee record
+              management, CRUD operations, role-based authentication, real-time
+              data updates, backend API inte- gration, and a responsive UI for
+              efficient workforce management.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="get-in-touch" class="section">
+        <h2>Get In Touch</h2>
+        <div class="get-in-touch-container">
+          <div class="contact-info">
+            <h3>Let's Talk</h3>
+            <p>
+              I'm always open to discussing new projects, creative ideas, or
+              opportunities to be part of your vision.
+            </p>
+            <ul class="contact-list">
+              <li>
+                <svg
+                  class="icon email-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M16 12H8m0 0l4-4m-4 4l4 4"
+                  />
+                </svg>
+                <span>Email</span>
+                <a href="mailto:pushpeshkr451@gmail.com"
+                  >pushpeshkr451@gmail.com</a
+                >
+              </li>
+              <li>
+                <svg
+                  class="icon location-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 11c1.104 0 2-.896 2-2s-.896-2-2-2-2 .896-2 2 .896 2 2 2z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21s-6-4.5-6-10a6 6 0 1112 0c0 5.5-6 10-6 10z"
+                  />
+                </svg>
+                <span>Location</span>
+                <span>Kolkata, India</span>
+              </li>
+              <li>
+                <svg
+                  class="icon linkedin-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M16 8a6 6 0 016 6v6h-4v-6a2 2 0 00-4 0v6h-4v-6a6 6 0 016-6z"
+                  />
+                  <rect width="4" height="12" x="2" y="9" rx="1" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+                <span>LinkedIn</span>
+                <a
+                  href="https://www.linkedin.com/in/pushpeshkr451/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >linkedin.com/in/pushpeshkr451/</a
+                >
+              </li>
+            </ul>
+          </div>
+          <form class="contact-form" action="#" method="post">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required
+            />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email"
+              required
+            />
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your message"
+              required
+            ></textarea>
+            <button type="submit" class="btn primary-btn send-message-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="send-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 10l9-3 7 7-9 3-7-7z"
+                />
+              </svg>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 Pushpesh Kumar. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
