@@ -31,4 +31,3 @@ To get a local copy up and running, follow these simple steps.
 ### Prerequisites
 
 You only need a modern web browser.
-
